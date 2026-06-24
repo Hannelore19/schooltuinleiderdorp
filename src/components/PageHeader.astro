@@ -1,0 +1,59 @@
+---
+import HamburgerMenu from "./HamburgerMenu.astro";
+
+const { title } = Astro.props;
+---
+
+<div style="
+background:white;
+padding:20px;
+border-radius:20px;
+margin-bottom:30px;
+box-shadow:0 2px 12px rgba(0,0,0,0.08);
+">
+
+  <div style="
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  ">
+
+    <a href="/" style="
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:inherit;
+    ">
+
+      <img
+        src="/images/logost.png"
+        alt="Schooltuin Leiderdorp"
+        style="
+        height:50px;
+        width:auto;
+        "
+      />
+
+      <span style="
+      font-weight:bold;
+      font-size:1.2rem;
+      ">
+        Schooltuin Leiderdorp
+      </span>
+
+    </a>
+
+    <HamburgerMenu />
+
+  </div>
+
+  <h1 style="
+  margin-top:20px;
+  margin-bottom:0;
+  color:#2e7d32;
+  ">
+    {title}
+  </h1>
+
+</div>
