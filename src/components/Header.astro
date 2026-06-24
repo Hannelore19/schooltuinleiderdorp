@@ -1,5 +1,9 @@
 ---
 import HamburgerMenu from "./HamburgerMenu.astro";
+
+// HEADER AFBEELDINGEN
+import headerImage from "../assets/cropped-header_meisjes_logo1.jpg";
+import logo from "../assets/logost.png";
 ---
 
 <div class="container">
@@ -10,13 +14,13 @@ import HamburgerMenu from "./HamburgerMenu.astro";
   ">
 
     <img
-      src="/images/cropped-header_meisjes_logo1.jpg"
+      src={headerImage}
       alt="Schooltuin Leiderdorp"
       style="
-      width:100%;
-      height:320px;
-      object-fit:cover;
-      display:block;
+        width:100%;
+        height:320px;
+        object-fit:cover;
+        display:block;
       "
     />
 
@@ -42,11 +46,11 @@ import HamburgerMenu from "./HamburgerMenu.astro";
     ">
 
       <img
-        src="/images/logost.png"
+        src={logo}
         alt="Logo Schooltuin Leiderdorp"
         style="
-        height:80px;
-        width:auto;
+          height:80px;
+          width:auto;
         "
       />
 
@@ -82,13 +86,13 @@ import HamburgerMenu from "./HamburgerMenu.astro";
       <a
         href="/kalender"
         style="
-        display:inline-block;
-        background:#2e7d32;
-        color:white;
-        padding:12px 20px;
-        border-radius:12px;
-        text-decoration:none;
-        font-weight:bold;
+          display:inline-block;
+          background:#2e7d32;
+          color:white;
+          padding:12px 20px;
+          border-radius:12px;
+          text-decoration:none;
+          font-weight:bold;
         "
       >
         Bekijk de tuinkalender
