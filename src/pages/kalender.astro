@@ -4,94 +4,42 @@ import PageHeader from "../components/PageHeader.astro";
 ---
 
 <MainLayout>
-
 <div class="container" style="max-width:1100px;margin:auto;padding:20px;">
 
-  <PageHeader title="📅 Tuinkalender 2026" />
+  <PageHeader title="Tuinkalender 2026" />
 
-  <p style="
-  font-size:1.1rem;
-  color:#666;
-  margin-bottom:30px;
-  ">
+  <p style="font-size:1.1rem;color:#666;margin-bottom:30px;">
     Alle activiteiten van het schooltuinseizoen overzichtelijk bij elkaar.
   </p>
 
-  <!-- BELANGRIJKE MOMENTEN -->
+  <h2 style="margin-bottom:15px;">Belangrijke momenten</h2>
 
-  <h2 style="
-  margin-bottom:15px;
-  ">
-    Belangrijke momenten
-  </h2>
-
-  <div style="
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:15px;
-  margin-bottom:40px;
-  ">
-
-    <div style="
-    background:white;
-    border-top:5px solid #2e7d32;
-    padding:20px;
-    border-radius:16px;
-    ">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-bottom:40px;">
+    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
       <h3>🐝 Bijenproject</h3>
       <p>29 juni – 10 juli</p>
     </div>
 
-    <div style="
-    background:white;
-    border-top:5px solid #2e7d32;
-    padding:20px;
-    border-radius:16px;
-    ">
+    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
       <h3>🥔 Aardappeloogst</h3>
       <p>22 – 26 juni</p>
     </div>
 
-    <div style="
-    background:white;
-    border-top:5px solid #2e7d32;
-    padding:20px;
-    border-radius:16px;
-    ">
+    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
       <h3>📅 Open avond</h3>
       <p>3 juni • 19:00 – 20:30</p>
     </div>
 
-    <div style="
-    background:white;
-    border-top:5px solid #2e7d32;
-    padding:20px;
-    border-radius:16px;
-    ">
+    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
       <h3>🍲 Soepproject</h3>
       <p>September</p>
     </div>
-
   </div>
 
-  <!-- VOORJAAR -->
-
-  <div style="
-  background:white;
-  padding:30px;
-  border-radius:24px;
-  margin-bottom:25px;
-  ">
-
-    <h2 style="
-    border-bottom:2px solid #2e7d32;
-    padding-bottom:10px;
-    ">
-      Voorjaar
-    </h2>
+  <div style="background:white;padding:30px;border-radius:24px;margin-bottom:25px;">
+    <h2 style="border-bottom:2px solid #2e7d32;padding-bottom:10px;">Voorjaar</h2>
 
     <h3>Maart</h3>
-
     <ul>
       <li>Start Leeuwerikschool (27 maart)</li>
       <li>Paden trappen</li>
@@ -101,7 +49,6 @@ import PageHeader from "../components/PageHeader.astro";
     </ul>
 
     <h3>April</h3>
-
     <ul>
       <li>Radijs zaaien</li>
       <li>Snijbiet zaaien</li>
@@ -111,7 +58,6 @@ import PageHeader from "../components/PageHeader.astro";
     </ul>
 
     <h3>Mei</h3>
-
     <ul>
       <li>Bleekselderij planten</li>
       <li>Afrikaantjes planten</li>
@@ -119,25 +65,10 @@ import PageHeader from "../components/PageHeader.astro";
       <li>Bonen leggen</li>
       <li>Oogst van radijs</li>
     </ul>
-
   </div>
 
-  <!-- ZOMER -->
-
-  <div style="
-  background:white;
-  padding:30px;
-  border-radius:24px;
-  margin-bottom:25px;
-  ">
-
-    <h2 style="
-    border-bottom:2px solid #2e7d32;
-    padding-bottom:10px;
-    ">
-      Zomer
-    </h2>
-
+  <div style="background:white;padding:30px;border-radius:24px;margin-bottom:25px;">
+    <h2 style="border-bottom:2px solid #2e7d32;padding-bottom:10px;">Zomer</h2>
     <ul style="line-height:2;">
       <li>3 juni: Open avond</li>
       <li>Tuin onkruidvrij houden</li>
@@ -146,47 +77,21 @@ import PageHeader from "../components/PageHeader.astro";
       <li>Bijenproject met imker</li>
       <li>Vakantieklaar maken van de tuin</li>
     </ul>
-
   </div>
 
-  <!-- VAKANTIE -->
-
-  <div style="
-  background:#f7faf7;
-  padding:30px;
-  border-radius:24px;
-  margin-bottom:25px;
-  border-left:6px solid #2e7d32;
-  ">
-
-    <h2>Zomervakantie</h2>
-
-    <p>
-      20 juli t/m 28 augustus
+  <!-- NIEUWE ZOMERVAKANTIE-SECTIE -->
+  <div style="background:#e8f5e9;padding:35px;border-radius:24px;margin-bottom:25px;border-left:8px solid #2e7d32;">
+    <h2 style="margin-top:0;">Zomervakantie</h2>
+    <p style="font-size:1.1rem;margin-bottom:10px;">20 juli t/m 28 augustus</p>
+    <p style="margin-bottom:10px;">Iedere woensdag is de tuin open van <strong>10:00 tot 12:00 uur</strong>.</p>
+    <p style="margin-bottom:0;">
+      Kinderen mogen dan onder begeleiding komen <strong>oogsten</strong> en <strong>onkruid wieden</strong>.
+      Vrijwilligers lopen rond om te helpen en vragen te beantwoorden.
     </p>
-
-    <p>
-      De schooltuin is iedere woensdag geopend van
-      10:00 tot 12:00 uur.
-    </p>
-
   </div>
 
-  <!-- NAJAAR -->
-
-  <div style="
-  background:white;
-  padding:30px;
-  border-radius:24px;
-  ">
-
-    <h2 style="
-    border-bottom:2px solid #2e7d32;
-    padding-bottom:10px;
-    ">
-      Najaar
-    </h2>
-
+  <div style="background:white;padding:30px;border-radius:24px;">
+    <h2 style="border-bottom:2px solid #2e7d32;padding-bottom:10px;">Najaar</h2>
     <ul style="line-height:2;">
       <li>Tuin schoonmaken en oogsten</li>
       <li>Natuurpad</li>
@@ -194,17 +99,11 @@ import PageHeader from "../components/PageHeader.astro";
       <li>Soepproject met groenten uit de schooltuin</li>
       <li>Uitloopweek begin oktober</li>
     </ul>
-
   </div>
 
-  <p style="
-  margin-top:30px;
-  color:#666;
-  font-size:0.95rem;
-  ">
+  <p style="margin-top:30px;color:#666;font-size:0.95rem;">
     Programma onder voorbehoud van weersomstandigheden, studiedagen en wijzigingen vanuit scholen.
   </p>
 
 </div>
-
 </MainLayout>
