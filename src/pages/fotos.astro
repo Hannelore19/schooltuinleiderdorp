@@ -1,22 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import PageHeader from "../components/PageHeader.astro";
-
-// ACTIVITEITEN
-import os26 from "../assets/os26.jpg";
-import oa261 from "../assets/oa261.jpg";
-import bm1 from "../assets/bm1.jpg";
-import vrijwilligers from "../assets/vrijwilligers.png";
-
-// NATUUR
-import bijopbloem from "../assets/bijopbloem.png";
-import zonnebloembij from "../assets/zonnebloembij.png";
-import boendahlia from "../assets/boendahlia.png";
-
-// OOGST
-import courgette from "../assets/courgette.png";
-import oogstuien from "../assets/oogstuien.png";
-import tuinkruiwagen from "../assets/tuinkruiwagen.png";
+/* Geen foto-imports meer */
 ---
 
 <MainLayout>
@@ -26,9 +11,9 @@ import tuinkruiwagen from "../assets/tuinkruiwagen.png";
   <PageHeader title="Foto's uit de schooltuin" />
 
   <p style="
-  font-size:1.1rem;
-  color:#666;
-  margin-bottom:30px;
+    font-size:1.1rem;
+    color:#666;
+    margin-bottom:30px;
   ">
     Een indruk van het schooltuinseizoen in Leiderdorp.
   </p>
@@ -40,16 +25,16 @@ import tuinkruiwagen from "../assets/tuinkruiwagen.png";
   </h2>
 
   <div style="
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px;
-  margin-bottom:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-bottom:40px;
   ">
 
-    <img src={os26} alt="Schooltuin" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={oa261} alt="Open avond" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={bm1} alt="Bezoek burgemeester" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={vrijwilligers} alt="Vrijwilligers" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/os26.jpg" alt="Schooltuin" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/oa261.jpg" alt="Open avond" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/bm1.jpg" alt="Bezoek burgemeester" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/vrijwilligers.png" alt="Vrijwilligers" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
 
   </div>
 
@@ -60,15 +45,15 @@ import tuinkruiwagen from "../assets/tuinkruiwagen.png";
   </h2>
 
   <div style="
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px;
-  margin-bottom:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    margin-bottom:40px;
   ">
 
-    <img src={bijopbloem} alt="Bij op bloem" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={zonnebloembij} alt="Zonnebloem met bij" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={boendahlia} alt="Dahlia" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/bijopbloem.png" alt="Bij op bloem" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/zonnebloembij.png" alt="Zonnebloem met bij" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/boendahlia.png" alt="Dahlia" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
 
   </div>
 
@@ -79,14 +64,14 @@ import tuinkruiwagen from "../assets/tuinkruiwagen.png";
   </h2>
 
   <div style="
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
   ">
 
-    <img src={courgette} alt="Courgette" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={oogstuien} alt="Oogst uien" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
-    <img src={tuinkruiwagen} alt="Kruiwagen" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/courgette.png" alt="Courgette" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/oogstuien.png" alt="Oogst uien" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
+    <img src="/schooltuinleiderdorp/assets/tuinkruiwagen.png" alt="Kruiwagen" style="width:100%;height:260px;object-fit:cover;border-radius:20px;" />
 
   </div>
 
