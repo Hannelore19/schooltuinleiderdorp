@@ -1,5 +1,6 @@
 ---
 const isHome = Astro.url.pathname === "/schooltuinleiderdorp/";
+import HamburgerMenu from "./HamburgerMenu.astro";
 ---
 
 {isHome && (
@@ -14,6 +15,7 @@ const isHome = Astro.url.pathname === "/schooltuinleiderdorp/";
     ">
       <div style="position:absolute;inset:0;background:rgba(0,0,0,0.35);"></div>
 
+      <!-- LOGO + MENU -->
       <div style="
         position:absolute;
         top:20px;
@@ -24,22 +26,22 @@ const isHome = Astro.url.pathname === "/schooltuinleiderdorp/";
         align-items:center;
       ">
         <a href="/schooltuinleiderdorp/" style="
-          color:white;
-          font-size:1.2rem;
-          font-weight:bold;
+          display:flex;
+          align-items:center;
+          gap:12px;
           text-decoration:none;
-        ">Home</a>
-
-        <button style="
-          background:rgba(255,255,255,0.2);
-          border:none;
-          padding:10px 14px;
-          border-radius:12px;
           color:white;
-          font-size:1.2rem;
-        ">☰</button>
+        ">
+          <img src="/schooltuinleiderdorp/assets/logost.png" alt="Logo" style="height:50px;" />
+          <span style="font-size:1.3rem;font-weight:bold;">Schooltuin Leiderdorp</span>
+        </a>
+
+        <div style="background:#1b5e20;padding:8px 12px;border-radius:12px;">
+          <HamburgerMenu />
+        </div>
       </div>
 
+      <!-- TITEL + KNOP -->
       <div style="position:absolute;bottom:40px;left:40px;color:white;">
         <h1 style="font-size:2.8rem;margin:0;">Schooltuin Leiderdorp</h1>
         <p style="font-size:1.3rem;margin:10px 0 20px;">Samen zaaien, ontdekken en oogsten</p>
