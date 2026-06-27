@@ -1,0 +1,111 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+---
+
+<MainLayout>
+  <div style="max-width:900px; margin:auto; padding:20px;">
+
+    <h1 style="
+      color:#1b5e20;
+      font-size:2.2rem;
+      margin-bottom:10px;
+    ">
+      Privacyreglement
+    </h1>
+
+    <p style="margin-bottom:30px; color:#555;">
+      Stichting Schooltuinen Leiderdorp "De Sterrekers" — Ingevolge de Algemene Verordening Gegevensbescherming (AVG)
+    </p>
+
+    <!-- ARTIKELEN -->
+    <div style="line-height:1.6; color:#333;">
+
+      <h2 style="color:#1b5e20;">Artikel 1 — Begrippen</h2>
+      <p>
+        In deze regeling wordt verstaan onder:<br><br>
+        <strong>Schooltuinen Leiderdorp:</strong> de Stichting Schooltuinen Leiderdorp 'De Sterrekers'.<br>
+        <strong>Het bestuur:</strong> het Bestuur van de Stichting Schooltuinen Leiderdorp 'De Sterrekers'.<br>
+        <strong>Het bestand:</strong> de verzameling van persoonsgegevens die betrekking heeft op de categorieën personen die genoemd zijn in artikel 3 van deze regeling. Het bestand bestaat uit meerdere documenten.<br>
+        <strong>Persoonsdossier:</strong> het geheel van schriftelijk en digitaal vastgelegde informatie met betrekking tot een persoon die deel uitmaakt van een van de categorieën genoemd in artikel 3 van deze regeling.<br>
+        <strong>Betrokkene:</strong> degene van wie persoonsgegevens in het bestand zijn opgenomen.<br>
+        <strong>Persoonsgegeven:</strong> gegeven dat herleidbaar is tot een individuele natuurlijke persoon.<br>
+        <strong>Derde:</strong> een ieder die niet behoort tot de organisatie van de verantwoordelijke, met uitzondering van de betrokkene.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 2 — Doelstelling van het bestand</h2>
+      <p>
+        Het bestand wordt gebruikt om contact te kunnen onderhouden tussen bestuur, deelnemende scholen en vrijwilligers. 
+        Dit contact is noodzakelijk voor indeling van vrijwilligers, roostertijden, uitval van lessen, etc.<br><br>
+        Tevens wordt het bestand gebruikt voor de benodigde overzichten voor het jaarverslag en het genereren van publiciteit en historische overzichten.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 3 — Categorieën personen</h2>
+      <p>
+        Het bestand bevat uitsluitend gegevens over vrijwilligers en oud‑vrijwilligers van de Schooltuinen Leiderdorp, deelnemende scholen en hun docenten, en regionale pers.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 4 — Opgenomen gegevens en wijze van verkrijgen</h2>
+      <p>
+        Het bestand omvat voor de personen genoemd in artikel 3 de gegevens zoals vermeld in bijlage 1.<br>
+        De persoonsgegevens worden verkregen door verstrekking door de betrokkene bij aanmelding voor het vrijwilligersschap, deelname door scholen en medewerking aan publiciteit.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 5 — Verantwoordelijkheid</h2>
+      <p>
+        Het Dagelijks Bestuur is verantwoordelijk voor het beheer, de ontwikkeling en de toepassing van het bestand. 
+        Het bestuur ziet toe op naleving en draagt zorg voor technische en organisatorische beveiliging.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 6 — Functioneren van het bestand</h2>
+      <p>
+        Het bestand wordt uitsluitend gebruikt in opdracht van het Dagelijks Bestuur en door aangewezen vrijwilligers. 
+        De gegevens worden alleen gebruikt voor de doelstelling zoals omschreven in artikel 2.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 7 — Toegang tot het bestand</h2>
+      <p>
+        Toegang hebben uitsluitend:<br>
+        1. het bestuur<br>
+        2. door het bestuur aangewezen vrijwilligers
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 8 — Verstrekking aan derden</h2>
+      <p>
+        Gegevens worden niet verstrekt aan derden, tenzij:<br>
+        1. dit voortvloeit uit het doel van het bestand<br>
+        2. dit wettelijk verplicht is<br>
+        3. dit gebeurt met toestemming van de betrokkene<br>
+        4. instanties met een publiekrechtelijke taak hierom verzoeken<br><br>
+        Verstrekking blijft achterwege indien geheimhouding verplicht is.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 9 — Bewaring en vernietiging</h2>
+      <p>
+        Indien gedurende 7 jaar geen contact is geweest, worden persoonsgegevens vernietigd. 
+        Financiële gegevens worden 7 jaar bewaard volgens wettelijke belastingbepalingen.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 10 — Recht op inzage</h2>
+      <p>
+        1. Betrokkene kan inzage vragen in geregistreerde gegevens.<br>
+        2. Binnen 4 weken wordt inzage gegeven.<br>
+        3. Alleen gegevens van de betrokkene worden verstrekt.<br>
+        4. Verzoeken moeten schriftelijk worden ingediend.<br>
+        5. Identiteit moet worden vastgesteld.<br>
+        6. Afwijzingen worden gemotiveerd.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 11 — Correctierecht</h2>
+      <p>
+        Betrokkene kan verbetering, aanvulling, verwijdering of afscherming vragen. 
+        Verzoeken worden schriftelijk ingediend en binnen 4 weken beantwoord.
+      </p>
+
+      <h2 style="color:#1b5e20;">Artikel 12 — Beroep</h2>
+      <p>
+        Bij weigering kan betrokkene zich wenden tot de rechtbank Den Haag of de Autoriteit Persoonsgegevens.
+      </p>
+
+      <h2 style="color:#1b5e20;">Bijlage I — Opgeslagen gegevens</h2>
+      <ul>
+        <li>Achternaam,
