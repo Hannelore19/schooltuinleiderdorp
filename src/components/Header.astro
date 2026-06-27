@@ -24,6 +24,7 @@ import HamburgerMenu from "./HamburgerMenu.astro";
         display:flex;
         justify-content:space-between;
         align-items:center;
+        z-index:10;
       ">
         <a href="/schooltuinleiderdorp/" style="
           display:flex;
@@ -36,13 +37,19 @@ import HamburgerMenu from "./HamburgerMenu.astro";
           <span style="font-size:1.3rem;font-weight:bold;">Schooltuin Leiderdorp</span>
         </a>
 
-        <div style="background:#1b5e20;padding:8px 12px;border-radius:12px;">
+        <!-- MENU IN GROENE KNOP -->
+        <div style="
+          background:#2e7d32;
+          padding:8px 12px;
+          border-radius:12px;
+          box-shadow:0 4px 10px rgba(0,0,0,0.15);
+        ">
           <HamburgerMenu />
         </div>
       </div>
 
       <!-- TITEL + KNOP -->
-      <div style="position:absolute;bottom:40px;left:40px;color:white;">
+      <div style="position:absolute;bottom:40px;left:40px;color:white;z-index:5;">
         <h1 style="font-size:2.8rem;margin:0;">Schooltuin Leiderdorp</h1>
         <p style="font-size:1.3rem;margin:10px 0 20px;">Samen zaaien, ontdekken en oogsten</p>
         <a href="/schooltuinleiderdorp/kalender" style="
