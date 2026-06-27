@@ -8,39 +8,47 @@ import Nieuws from "../components/Nieuws.astro";
 <MainLayout>
 
   <!-- INFOCARDS -->
-  <section style="max-width:1000px;margin:40px auto;">
+  <section style="max-width:1000px;margin:20px auto 30px;">
     <InfoCards />
   </section>
 
   <!-- DEZE WEEK -->
-  <section style="max-width:1000px;margin:40px auto;">
+  <section style="max-width:1000px;margin:20px auto 40px;">
     <DezeWeek />
   </section>
 
   <!-- FOTO SLIDER -->
-  <section style="max-width:1000px;margin:40px auto;">
-    <h2>Foto’s uit de tuin</h2>
+  <section style="max-width:1000px;margin:20px auto 40px;">
+    <h2 style="margin-bottom:15px;">Foto’s uit de tuin</h2>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
 
-    <div id="image-slider" class="splide" style="margin-top:20px;">
+    <div id="image-slider" class="splide">
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
-            <img src="/schooltuinleiderdorp/assets/foto1.jpg" style="width:100%;border-radius:16px;" />
+            <img src="/schooltuinleiderdorp/assets/foto1.jpg" />
           </li>
           <li class="splide__slide">
-            <img src="/schooltuinleiderdorp/assets/foto2.jpg" style="width:100%;border-radius:16px;" />
+            <img src="/schooltuinleiderdorp/assets/foto2.jpg" />
           </li>
           <li class="splide__slide">
-            <img src="/schooltuinleiderdorp/assets/foto3.jpg" style="width:100%;border-radius:16px;" />
+            <img src="/schooltuinleiderdorp/assets/foto3.jpg" />
           </li>
         </ul>
       </div>
     </div>
 
     <style>
-      /* Pijltjes mooi op de foto */
+      /* Alle foto's dezelfde hoogte */
+      .splide__slide img {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+
+      /* Pijltjes altijd op de foto */
       .splide__arrow {
         background: rgba(0, 0, 0, 0.4);
         width: 40px;
@@ -49,8 +57,14 @@ import Nieuws from "../components/Nieuws.astro";
         top: 50%;
         transform: translateY(-50%);
       }
+
       .splide__arrow svg {
         fill: white;
+      }
+
+      /* Minder witruimte onder slider */
+      .splide {
+        margin-bottom: 10px;
       }
     </style>
 
@@ -69,8 +83,8 @@ import Nieuws from "../components/Nieuws.astro";
   </section>
 
   <!-- LAATSTE NIEUWS -->
-  <section style="max-width:1000px;margin:40px auto;">
-    <h2>Laatste nieuws</h2>
+  <section style="max-width:1000px;margin:20px auto 40px;">
+    <h2 style="margin-bottom:15px;">Laatste nieuws</h2>
     <Nieuws />
   </section>
 
