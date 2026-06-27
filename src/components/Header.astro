@@ -24,7 +24,7 @@ import HamburgerMenu from "./HamburgerMenu.astro";
         display:flex;
         justify-content:space-between;
         align-items:center;
-        z-index:10;
+        z-index:9999;
       ">
         <a href="/schooltuinleiderdorp/" style="
           display:flex;
@@ -37,12 +37,13 @@ import HamburgerMenu from "./HamburgerMenu.astro";
           <span style="font-size:1.3rem;font-weight:bold;">Schooltuin Leiderdorp</span>
         </a>
 
-        <!-- MENU IN GROENE KNOP -->
+        <!-- MENU KNOP -->
         <div style="
-          background:#2e7d32;
+          background:#1b5e20;
           padding:8px 12px;
           border-radius:12px;
           box-shadow:0 4px 10px rgba(0,0,0,0.15);
+          z-index:9999;
         ">
           <HamburgerMenu />
         </div>
