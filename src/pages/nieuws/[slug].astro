@@ -2,21 +2,20 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import { news } from "../../data/news.js";
 
+export function getStaticPaths() {
+  return news.map((item) => ({
+    params: { slug: item.slug }
+  }));
+}
+
 const { slug } = Astro.params;
 const item = news.find((n) => n.slug === slug);
-
-if (!item) {
-  throw new Error(`Nieuwsitem niet gevonden: ${slug}`);
-}
 ---
 
 <MainLayout title={item.title}>
 
   <div style="max-width:900px;margin:auto;padding:20px;">
-
-    <h1 style="color:#1b5e20;margin-bottom:20px;">
-      {item.title}
-    </h1>
+    <h1 style="color:#1b5e20;margin-bottom:20px;">{item.title}</h1>
 
     <img
       src={`/assets/${item.photo_news}`}
@@ -33,7 +32,6 @@ if (!item) {
         ← Terug naar nieuws
       </a>
     </p>
-
   </div>
 
 </MainLayout>
