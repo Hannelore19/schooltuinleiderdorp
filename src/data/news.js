@@ -1,4 +1,5 @@
 // src/data/news.js
+// rebuild
 export const news = [
   {
     slug: "open-avond",
