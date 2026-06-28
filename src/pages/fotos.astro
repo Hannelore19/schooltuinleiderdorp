@@ -2,24 +2,26 @@
 import Slider from "../components/Slider.astro";
 
 // ACTIVITEITEN
-import os261 from "../assets/os261.jpg";
-import oa261 from "../assets/oa261.jpg";
-import bm1 from "../assets/bm1.jpg";
-import vrijwilligers from "../assets/vrijwilligers.png";
+const activiteiten = [
+  "/assets/os261.jpg",
+  "/assets/oa261.jpg",
+  "/assets/bm1.jpg",
+  "/assets/vrijwilligers.png"
+];
 
 // NATUUR & DIEREN
-import bijopbloem from "../assets/bijopbloem.png";
-import zonnebloembij from "../assets/zonnebloembij.png";
-import boendahlia from "../assets/boendahlia.png";
+const natuur = [
+  "/assets/bijopbloem.png",
+  "/assets/zonnebloembij.png",
+  "/assets/boendahlia.png"
+];
 
 // OOGST & TUINWERK
-import courgette from "../assets/courgette.png";
-import oogstuien from "../assets/oogstuien.png";
-import tuinkruiwagen from "../assets/tuinkruiwagen.png";
-
-const activiteiten = [os261, oa261, bm1, vrijwilligers];
-const natuur = [bijopbloem, zonnebloembij, boendahlia];
-const oogst = [courgette, oogstuien, tuinkruiwagen];
+const oogst = [
+  "/assets/courgette.png",
+  "/assets/oogstuien.png",
+  "/assets/tuinkruiwagen.png"
+];
 ---
 
 <div style="max-width:900px;margin:auto;padding:20px;">
