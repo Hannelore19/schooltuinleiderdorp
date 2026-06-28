@@ -40,7 +40,6 @@ import HomepageNieuws from "../components/HomepageNieuws.astro";
     </div>
 
     <style>
-      /* Alle foto's dezelfde hoogte */
       .splide__slide img {
         height: 350px;
         width: 100%;
@@ -48,7 +47,6 @@ import HomepageNieuws from "../components/HomepageNieuws.astro";
         border-radius: 16px;
       }
 
-      /* Pijltjes altijd op de foto */
       .splide__arrow {
         background: rgba(0, 0, 0, 0.4);
         width: 40px;
@@ -62,7 +60,6 @@ import HomepageNieuws from "../components/HomepageNieuws.astro";
         fill: white;
       }
 
-      /* Minder witruimte onder slider */
       .splide {
         margin-bottom: 10px;
       }
@@ -85,7 +82,7 @@ import HomepageNieuws from "../components/HomepageNieuws.astro";
   <!-- LAATSTE NIEUWS -->
   <section style="max-width:1000px;margin:20px auto 40px;">
     <h2 style="margin-bottom:15px;">Laatste nieuws</h2>
-    <Nieuws />
+    <HomepageNieuws />
   </section>
 
 </MainLayout>
