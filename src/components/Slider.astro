@@ -1,0 +1,35 @@
+---
+const { photos, height = "260px" } = Astro.props;
+---
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css" />
+
+<div class="splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      {photos.map((photo) => (
+        <li class="splide__slide">
+          <img 
+            src={photo} 
+            style={`width:100%;height:${height};object-fit:cover;border-radius:12px;`} 
+          />
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 1,
+      autoplay: true,
+      interval: 3000,
+      pauseOnHover: true,
+      arrows: true,
+      pagination: false
+    }).mount();
+  });
+</script>
