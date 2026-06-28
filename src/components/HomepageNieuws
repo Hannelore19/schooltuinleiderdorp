@@ -1,0 +1,72 @@
+---
+import { news } from "../data/news.js";
+
+const sortedNews = [...news].sort(
+  (a, b) => new Date(b.date) - new Date(a.date)
+);
+
+const homepageItems = sortedNews.slice(0, 3);
+---
+
+<div style="
+  background:white;
+  padding:35px;
+  border-radius:24px;
+  max-width:900px;
+  margin:40px auto;
+">
+
+  <h2 style="margin-top:0;margin-bottom:25px;color:#1b5e20;">
+    Nieuws
+  </h2>
+
+  {homepageItems.map((item) => (
+    <div style="margin-bottom:40px;">
+      <h3 style="margin-bottom:10px;color:#1b5e20;">
+        {item.title}
+      </h3>
+
+      <img
+        src={`/assets/${item.photo_home}`}
+        alt={item.title}
+        style="width:100%;border-radius:20px;margin:0 0 20px 0;"
+      />
+
+      <p style="margin:0 0 10px 0;">
+        {item.intro}
+      </p>
+
+      <a
+        href={`/nieuws/${item.slug}`}
+        style="
+          display:inline-block;
+          color:#1b5e20;
+          font-weight:600;
+          text-decoration:none;
+          margin-top:5px;
+        "
+      >
+        Lees verder →
+      </a>
+    </div>
+  ))}
+
+  <div style="text-align:center;margin-top:20px;">
+    <a
+      href="/nieuws"
+      style="
+        display:inline-block;
+        background:#1b5e20;
+        color:white;
+        padding:12px 24px;
+        border-radius:8px;
+        text-decoration:none;
+        font-weight:600;
+        font-size:1rem;
+      "
+    >
+      Meer nieuws →
+    </a>
+  </div>
+
+</div>
