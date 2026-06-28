@@ -1,128 +1,127 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import PageHeader from "../components/PageHeader.astro";
 ---
 
-<MainLayout>
-<div class="container" style="max-width:1100px;margin:auto;padding:20px;">
+<MainLayout title="Tuinkalender">
 
-  <PageHeader title="Tuinkalender 2026" />
+  <div style="max-width:900px; margin:auto; padding:20px;">
 
-  <p style="font-size:1.1rem;color:#666;margin-bottom:30px;">
-    Alle activiteiten van het schooltuinseizoen overzichtelijk bij elkaar.
-  </p>
-
-  <!-- BELANGRIJKE MOMENTEN -->
-  <h2 style="margin-bottom:15px;">Belangrijke momenten</h2>
-
-  <div style="
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
-    margin-bottom:40px;
-  ">
-
-    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
-      <h3>🐝 Bijenproject</h3>
-      <p>29 juni – 10 juli</p>
-    </div>
-
-    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
-      <h3>🥔 Aardappeloogst</h3>
-      <p>22 – 26 juni</p>
-    </div>
-
-    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
-      <h3>📅 Open avond</h3>
-      <p>3 juni • 19:00 – 20:30</p>
-    </div>
-
-    <div style="background:white;border-top:5px solid #2e7d32;padding:20px;border-radius:16px;">
-      <h3>🍲 Soepproject</h3>
-      <p>September</p>
-    </div>
-
-  </div>
-
-  <!-- VOORJAAR -->
-  <div style="background:white;padding:30px;border-radius:24px;margin-bottom:25px;">
-    <h2 style="border-bottom:2px solid #2e7d32;padding-bottom:10px;">Voorjaar</h2>
-
-    <h3>Maart</h3>
-    <ul>
-      <li>Start Leeuwerikschool (27 maart)</li>
-      <li>Paden trappen</li>
-      <li>Mest strooien</li>
-      <li>Aardappelen poten</li>
-      <li>Sterrenkers zaaien</li>
-    </ul>
-
-    <h3>April</h3>
-    <ul>
-      <li>Radijs zaaien</li>
-      <li>Snijbiet zaaien</li>
-      <li>Wortelen zaaien</li>
-      <li>Plantuien en sjalotten poten</li>
-      <li>Sla en andijvie planten</li>
-    </ul>
-
-    <h3>Mei</h3>
-    <ul>
-      <li>Bleekselderij planten</li>
-      <li>Afrikaantjes planten</li>
-      <li>Zonnebloemen planten</li>
-      <li>Bonen leggen</li>
-      <li>Oogst van radijs</li>
-    </ul>
-  </div>
-
-  <!-- ZOMER -->
-  <div style="background:white;padding:30px;border-radius:24px;margin-bottom:25px;">
-    <h2 style="border-bottom:2px solid #2e7d32;padding-bottom:10px;">Zomer</h2>
-    <ul style="line-height:2;">
-      <li>3 juni: Open avond</li>
-      <li>Tuin onkruidvrij houden</li>
-      <li>Sla en andijvie oogsten</li>
-      <li>22 t/m 26 juni: aardappelen rooien</li>
-      <li>Bijenproject met imker</li>
-      <li>Vakantieklaar maken van de tuin</li>
-    </ul>
-  </div>
-
-  <!-- ZOMERVAKANTIE (VOLLEDIG GROEN) -->
-  <div style="
-    background:#2e7d32;
-    color:white;
-    padding:40px;
-    border-radius:24px;
-    margin-bottom:30px;
-  ">
-    <h2 style="margin-top:0;">Zomervakantie</h2>
-    <p style="font-size:1.2rem;margin-bottom:10px;">20 juli t/m 28 augustus</p>
-    <p style="margin-bottom:10px;">
-      Iedere woensdag is de tuin open van <strong>10:00 tot 12:00 uur</strong>.
+    <p style="font-size:1.1rem; color:#666; margin-bottom:30px;">
+      Alle activiteiten van het schooltuinseizoen overzichtelijk bij elkaar.
     </p>
-    <p style="margin-bottom:0;">
-      Kinderen mogen dan onder begeleiding komen <strong>oogsten</strong> en <strong>onkruid wieden</strong>.
-      Onze vrijwilligers zijn aanwezig om te helpen en vragen te beantwoorden.
+
+    <!-- BELANGRIJKE MOMENTEN -->
+    <h2 style="margin-bottom:15px; color:#1b5e20;">Belangrijke momenten</h2>
+
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:15px;
+      margin-bottom:40px;
+    ">
+
+      <div style="background:white; border-top:5px solid #1b5e20; padding:20px; border-radius:16px;">
+        <h3>🐝 Bijenproject</h3>
+        <p>29 juni – 10 juli</p>
+      </div>
+
+      <div style="background:white; border-top:5px solid #1b5e20; padding:20px; border-radius:16px;">
+        <h3>🥔 Aardappeloogst</h3>
+        <p>22 – 26 juni</p>
+      </div>
+
+      <div style="background:white; border-top:5px solid #1b5e20; padding:20px; border-radius:16px;">
+        <h3>📅 Open avond</h3>
+        <p>3 juni • 19:00 – 20:30</p>
+      </div>
+
+      <div style="background:white; border-top:5px solid #1b5e20; padding:20px; border-radius:16px;">
+        <h3>🍲 Soepproject</h3>
+        <p>September</p>
+      </div>
+
+    </div>
+
+    <!-- VOORJAAR -->
+    <div style="background:white; padding:30px; border-radius:24px; margin-bottom:25px;">
+      <h2 style="border-bottom:2px solid #1b5e20; padding-bottom:10px;">Voorjaar</h2>
+
+      <h3>Maart</h3>
+      <ul>
+        <li>Start Leeuwerikschool (27 maart)</li>
+        <li>Paden trappen</li>
+        <li>Mest strooien</li>
+        <li>Aardappelen poten</li>
+        <li>Sterrenkers zaaien</li>
+      </ul>
+
+      <h3>April</h3>
+      <ul>
+        <li>Radijs zaaien</li>
+        <li>Snijbiet zaaien</li>
+        <li>Wortelen zaaien</li>
+        <li>Plantuien en sjalotten poten</li>
+        <li>Sla en andijvie planten</li>
+      </ul>
+
+      <h3>Mei</h3>
+      <ul>
+        <li>Bleekselderij planten</li>
+        <li>Afrikaantjes planten</li>
+        <li>Zonnebloemen planten</li>
+        <li>Bonen leggen</li>
+        <li>Oogst van radijs</li>
+      </ul>
+    </div>
+
+    <!-- ZOMER -->
+    <div style="background:white; padding:30px; border-radius:24px; margin-bottom:25px;">
+      <h2 style="border-bottom:2px solid #1b5e20; padding-bottom:10px;">Zomer</h2>
+      <ul style="line-height:2;">
+        <li>3 juni: Open avond</li>
+        <li>Tuin onkruidvrij houden</li>
+        <li>Sla en andijvie oogsten</li>
+        <li>22 t/m 26 juni: aardappelen rooien</li>
+        <li>Bijenproject met imker</li>
+        <li>Vakantieklaar maken van de tuin</li>
+      </ul>
+    </div>
+
+    <!-- ZOMERVAKANTIE -->
+    <div style="
+      background:#1b5e20;
+      color:white;
+      padding:40px;
+      border-radius:24px;
+      margin-bottom:30px;
+    ">
+      <h2 style="margin-top:0;">Zomervakantie</h2>
+      <p style="font-size:1.2rem; margin-bottom:10px;">20 juli t/m 28 augustus</p>
+      <p style="margin-bottom:10px;">
+        Iedere woensdag is de tuin open van <strong>10:00 tot 12:00 uur</strong>.
+      </p>
+      <p style="margin-bottom:0;">
+        Kinderen mogen dan onder begeleiding komen <strong>oogsten</strong> en <strong>onkruid wieden</strong>.
+        Onze vrijwilligers zijn aanwezig om te helpen en vragen te beantwoorden.
+      </p>
+    </div>
+
+    <!-- NAJAAR -->
+    <div style="background:white; padding:30px; border-radius:24px;">
+      <h2 style="border-bottom:2px solid #1b5e20; padding-bottom:10px;">Najaar</h2>
+      <ul style="line-height:2;">
+        <li>Tuin schoonmaken en oogsten</li>
+        <li>Natuurpad</li>
+        <li>Laatste woensdagmiddag: 16 september</li>
+        <li>Soepproject met groenten uit de schooltuin</li>
+        <li>Uitloopweek begin oktober</li>
+      </ul>
+    </div>
+
+    <p style="margin-top:30px; color:#666; font-size:0.95rem;">
+      Programma onder voorbehoud van weersomstandigheden, studiedagen en wijzigingen vanuit scholen.
     </p>
+
   </div>
 
-  <!-- NAJAAR -->
-  <div style="background:white;padding:30px;border-radius:24px;">
-    <h2 style="border-bottom:2px solid #2e7d32;padding-bottom:10px;">Najaar</h2>
-    <ul style="line-height:2;">
-      <li>Tuin schoonmaken en oogsten</li>
-      <li>Natuurpad</li>
-      <li>Laatste woensdagmiddag: 16 september</li>
-      <li>Soepproject met groenten uit de schooltuin</li>
-      <li>Uitloopweek begin oktober</li>
-    </ul>
-  </div>
-
-  <p style="margin-top:30px;color:#666;font-size:0.95rem;">
-    Programma onder voorbehoud van weersomstandigheden, studiedagen en wijzigingen vanuit scholen.
-  </p>
-
-</div>
 </MainLayout>
