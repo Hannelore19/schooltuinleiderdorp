@@ -1,99 +1,101 @@
-
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import PageHeader from "../components/PageHeader.astro";
-/* Geen foto-imports meer */
+
+// SPONSOR LOGO'S
+import gemeente from "../assets/logo-gemeente-leiderdorp.jpg";
+import fonds1818 from "../assets/fonds1818.jpg";
+import cda from "../assets/CDA_logo_2021.jpg";
+import polderfabriek from "../assets/Polderfabriek.jpg";
+import reyneveld from "../assets/reyneveld.png";
+import praxis from "../assets/PraxisEmmerSchepje.jpg";
 ---
 
-<MainLayout>
+<MainLayout title="Sponsoren">
 
-<div class="container" style="max-width:1100px;margin:auto;padding:20px;">
+  <div style="max-width:900px; margin:auto; padding:20px;">
 
-  <PageHeader title="Sponsoren" />
-
-  <div style="
-    background:white;
-    padding:30px;
-    border-radius:24px;
-    margin-bottom:25px;
-  ">
-    <h2>Onze sponsoren</h2>
-
-    <p>
-      De Stichting Schooltuinen Leiderdorp kan haar activiteiten uitvoeren
-      dankzij de steun van betrokken organisaties, bedrijven en instellingen.
-      Hun bijdrage helpt ons bij het onderhoud van de tuinen, de aanschaf van
-      materialen en het aanbieden van schooltuinonderwijs aan honderden
-      kinderen uit Leiderdorp.
-    </p>
-  </div>
-
-  <div style="
-    background:white;
-    padding:30px;
-    border-radius:24px;
-    margin-bottom:25px;
-  ">
-
-    <h2>Met dank aan</h2>
-
+    <!-- INLEIDING -->
     <div style="
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:25px;
-      align-items:center;
+      background:white;
+      padding:30px;
+      border-radius:24px;
+      margin-bottom:25px;
+    ">
+      <h2 style="color:#1b5e20;">Onze sponsoren</h2>
+
+      <p>
+        De Stichting Schooltuinen Leiderdorp kan haar activiteiten uitvoeren dankzij de steun
+        van betrokken organisaties, bedrijven en instellingen. Hun bijdrage helpt ons bij het
+        onderhoud van de tuinen, de aanschaf van materialen en het aanbieden van schooltuinonderwijs
+        aan honderden kinderen uit Leiderdorp.
+      </p>
+    </div>
+
+    <!-- LOGO GRID -->
+    <div style="
+      background:white;
+      padding:30px;
+      border-radius:24px;
+      margin-bottom:25px;
     ">
 
-      <img src="/schooltuinleiderdorp/assets/logo-gemeente-leiderdorp.jpg" alt="Gemeente Leiderdorp" style="width:100%;max-height:120px;object-fit:contain;" />
-      <img src="/schooltuinleiderdorp/assets/fonds1818.jpg" alt="Fonds 1818" style="width:100%;max-height:120px;object-fit:contain;" />
-      <img src="/schooltuinleiderdorp/assets/CDA_logo_2021.jpg" alt="CDA Leiderdorp" style="width:100%;max-height:120px;object-fit:contain;" />
-      <img src="/schooltuinleiderdorp/assets/Polderfabriek.jpg" alt="Polderfabriek" style="width:100%;max-height:120px;object-fit:contain;" />
-      <img src="/schooltuinleiderdorp/assets/reyneveld.png" alt="Reyneveld" style="width:100%;max-height:120px;object-fit:contain;" />
-      <img src="/schooltuinleiderdorp/assets/PraxisEmmerSchepje.jpg" alt="Praxis Leiderdorp" style="width:100%;max-height:120px;object-fit:contain;" />
+      <h2 style="color:#1b5e20;">Met dank aan</h2>
+
+      <div style="
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+        gap:25px;
+        align-items:center;
+        margin-top:20px;
+      ">
+        <img src={gemeente} alt="Gemeente Leiderdorp" style="width:100%;max-height:120px;object-fit:contain;" />
+        <img src={fonds1818} alt="Fonds 1818" style="width:100%;max-height:120px;object-fit:contain;" />
+        <img src={cda} alt="CDA Leiderdorp" style="width:100%;max-height:120px;object-fit:contain;" />
+        <img src={polderfabriek} alt="Polderfabriek" style="width:100%;max-height:120px;object-fit:contain;" />
+        <img src={reyneveld} alt="Reyneveld" style="width:100%;max-height:120px;object-fit:contain;" />
+        <img src={praxis} alt="Praxis Leiderdorp" style="width:100%;max-height:120px;object-fit:contain;" />
+      </div>
+
+      <p style="margin-top:25px; color:#666;">
+        Praxis Leiderdorp ondersteunt de schooltuinen al sinds 2005.
+      </p>
 
     </div>
 
-    <p style="margin-top:25px;color:#666;">
-      Praxis Leiderdorp ondersteunt de schooltuinen al sinds 2005.
-    </p>
+    <!-- SPONSOR WORDEN -->
+    <div style="
+      background:#f7faf7;
+      padding:30px;
+      border-radius:24px;
+      border-left:6px solid #1b5e20;
+    ">
+      <h2 style="color:#1b5e20;">Ook sponsor worden?</h2>
+
+      <p>
+        Wilt u bijdragen aan natuur- en milieueducatie voor kinderen in Leiderdorp?
+        Nieuwe sponsoren zijn van harte welkom.
+      </p>
+
+      <p>
+        Neem contact op met de voorzitter van Stichting Schooltuinen Leiderdorp:
+      </p>
+
+      <p>
+        <strong>Joop van Huut</strong><br />
+        071 - 589 50 32<br />
+        j.h.m.vanhuut@casema.nl
+      </p>
+
+      <p>
+        Financiële bijdragen kunnen worden overgemaakt op:
+      </p>
+
+      <p>
+        <strong>NL70RABO0108980332</strong><br />
+        t.n.v. Stichting Schooltuinen Leiderdorp
+      </p>
+    </div>
 
   </div>
-
-  <div style="
-    background:#f7faf7;
-    padding:30px;
-    border-radius:24px;
-    border-left:6px solid #2e7d32;
-  ">
-
-    <h2>Ook sponsor worden?</h2>
-
-    <p>
-      Wilt u bijdragen aan natuur- en milieueducatie voor kinderen in
-      Leiderdorp? Nieuwe sponsoren zijn van harte welkom.
-    </p>
-
-    <p>
-      Neem contact op met de voorzitter van Stichting Schooltuinen Leiderdorp:
-    </p>
-
-    <p>
-      <strong>Joop van Huut</strong><br />
-      071 - 589 50 32<br />
-      j.h.m.vanhuut@casema.nl
-    </p>
-
-    <p>
-      Financiële bijdragen kunnen worden overgemaakt op:
-    </p>
-
-    <p>
-      <strong>NL70RABO0108980332</strong><br />
-      t.n.v. Stichting Schooltuinen Leiderdorp
-    </p>
-
-  </div>
-
-</div>
 
 </MainLayout>
