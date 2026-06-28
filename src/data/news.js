@@ -1,4 +1,5 @@
-// rebuild
+// rebuild trigger
+
 export const news = [
   {
     slug: "open-avond",
@@ -21,8 +22,7 @@ export const news = [
 
       Ondanks de regen was het een geslaagde avond, iets korter dan andere jaren.
 
-      Link naar radio-interview met voorzitter Joop van Huut:
-      https://centraalplus.nl/2026/06/01/woensdag-open-avond-bij-schooltuintjes-leiderdorp/
+      Bekijk het radio-interview met voorzitter Joop van Huut bij Centraal+.
     `,
     photos: [
       "/schooltuinleiderdorp/assets/oa261.jpg",
@@ -63,8 +63,7 @@ export const news = [
     photos: [
       "/schooltuinleiderdorp/assets/zonnebloembij.png",
       "/schooltuinleiderdorp/assets/bijopbloem.png"
-   ]
-
+    ]
   },
 
   {
@@ -76,18 +75,7 @@ export const news = [
       Op 2 april 2026 werd het schooltuinseizoen officieel geopend door wethouder 
       Herman Romein samen met leerlingen van Het Bolwerk.
 
-      Bekijk hier het prachtige filmpje van streekomroep Centraal:
-      https://centraalplus.nl/2026/04/02/kinderen-openen-schooltuinseizoen-in-leiderdorp-met-vieze-handen-en-frisse-lucht/
-
-      De leerlingen kwamen op de fiets naar de schooltuinen. Je kon ze al van ver 
-      horen aankomen. Het was nog een hele klus om alle fietsen netjes in het rek 
-      te krijgen.
-
-      In de grote tent gaf de wethouder een korte toespraak. Daarna mochten de 
-      kinderen zich uitleven bij het paadjes trappen — achter de wethouder aan.
-
-      Daarna begon het echte werk: een tuinbordje maken, mest strooien, aardappels 
-      poten en sterrenkers zaaien.
+      Bekijk het filmpje van streekomroep Centraal+.
     `,
     photos: [
       "/schooltuinleiderdorp/assets/os261.jpg",
