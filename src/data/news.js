@@ -25,12 +25,12 @@ export const news = [
       https://centraalplus.nl/2026/06/01/woensdag-open-avond-bij-schooltuintjes-leiderdorp/
     `,
     photos: [
-      "/assets/oa261.jpg",
-      "/assets/oa262.jpg",
-      "/assets/oa263.jpg",
-      "/assets/oa264.jpg",
-      "/assets/oa265.jpg",
-      "/assets/oa266.jpg"
+      "/schooltuinleiderdorp/assets/oa261.jpg",
+      "/schooltuinleiderdorp/assets/oa262.jpg",
+      "/schooltuinleiderdorp/assets/oa263.jpg",
+      "/schooltuinleiderdorp/assets/oa264.jpg",
+      "/schooltuinleiderdorp/assets/oa265.jpg",
+      "/schooltuinleiderdorp/assets/oa266.jpg"
     ]
   },
 
@@ -46,7 +46,7 @@ export const news = [
       Later komen hier meer foto's bij van het oogsten.
     `,
     photos: [
-      "/assets/foto3.jpg"
+      "/schooltuinleiderdorp/assets/foto3.jpg"
     ]
   },
 
@@ -61,9 +61,10 @@ export const news = [
       in imkerpakken.
     `,
     photos: [
-      "/assets/zonnebloembij.png",
-      "/assets/bijopbloem.png"
-    ]
+      "/schooltuinleiderdorp/assets/zonnebloembij.png",
+      "/schooltuinleiderdorp/assets/bijopbloem.png"
+   ]
+
   },
 
   {
@@ -89,11 +90,11 @@ export const news = [
       poten en sterrenkers zaaien.
     `,
     photos: [
-      "/assets/os261.jpg",
-      "/assets/os262.jpg",
-      "/assets/os263.jpg",
-      "/assets/os264.jpg",
-      "/assets/os265.jpg"
+      "/schooltuinleiderdorp/assets/os261.jpg",
+      "/schooltuinleiderdorp/assets/os262.jpg",
+      "/schooltuinleiderdorp/assets/os263.jpg",
+      "/schooltuinleiderdorp/assets/os264.jpg",
+      "/schooltuinleiderdorp/assets/os265.jpg"
     ]
   }
 ];
