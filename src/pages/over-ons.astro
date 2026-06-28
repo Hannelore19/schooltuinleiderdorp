@@ -1,86 +1,110 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import PageHeader from "../components/PageHeader.astro";
 ---
 
-<MainLayout>
+<MainLayout title="Over ons">
 
-<div class="container" style="max-width:1000px;margin:auto;padding:20px;">
+  <div style="max-width:900px; margin:auto; padding:20px;">
 
-  <PageHeader title="Over ons" />
+    <!-- FOTO -->
+    <img
+      src="/schooltuinleiderdorp/assets/vrijwilligers.png"
+      alt="Vrijwilligers van de schooltuin"
+      style="
+        width:100%;
+        height:350px;
+        object-fit:cover;
+        border-radius:24px;
+        margin-bottom:25px;
+      "
+    />
 
-  <img
-    src="/schooltuinleiderdorp/assets/vrijwilligers.png"
-    alt="Vrijwilligers van de schooltuin"
-    style="
-      width:100%;
-      height:350px;
-      object-fit:cover;
-      border-radius:24px;
-      margin-bottom:25px;
-    "
-  />
+    <!-- INLEIDING -->
+    <div style="background:white; padding:35px; border-radius:24px;">
 
-  <div style="
-    background:white;
-    padding:35px;
-    border-radius:24px;
-  ">
+      <h2 style="color:#1b5e20;">Stichting Schooltuinen Leiderdorp</h2>
 
-    <h2>Stichting Schooltuinen Leiderdorp</h2>
+      <p>
+        De Stichting Schooltuinen Leiderdorp laat alle leerlingen van groep 6 en 7
+        van de Leiderdorpse basisscholen kennismaken met natuur, milieu en gezond voedsel.
+        Ieder seizoen doen ongeveer <strong>350 kinderen</strong> mee.
+      </p>
 
-    <p>
-      De Stichting Schooltuinen Leiderdorp spant zich in om alle leerlingen
-      van groep 6 en 7 van de Leiderdorpse basisscholen kennis te laten maken
-      met natuur en milieu. Het gaat ieder seizoen om ongeveer
-      350 leerlingen.
-    </p>
+      <p>
+        In het voorjaar krijgt iedere leerling een eigen tuintje van ongeveer vier vierkante meter.
+        Daarin zaaien, planten, wieden en oogsten ze zelf groenten, kruiden en bloemen.
+      </p>
 
-    <p>
-      De leerlingen beginnen in het voorjaar met de verzorging van een eigen
-      tuintje van ongeveer vier vierkante meter. Zij zijn zelf verantwoordelijk
-      voor het kweken van groenten, kruiden en bloemen.
-    </p>
+      <p>
+        Zo ontdekken kinderen spelenderwijs hoe planten groeien, welke rol weer, bodem en insecten spelen
+        en hoe voedsel ontstaat. Biologie in de praktijk — en nog leuk ook.
+      </p>
 
-    <p>
-      Tijdens het seizoen maken de kinderen kennis met allerlei
-      tuinwerkzaamheden, zoals zaaien, planten, onkruid wieden en oogsten.
-      Daarbij ontdekken zij dat groei en bloei afhankelijk zijn van weer,
-      bodem, insecten en verzorging.
-    </p>
+      <!-- SAMENWERKING -->
+      <h2 style="margin-top:40px; color:#1b5e20;">Samenwerking</h2>
 
-    <p>
-      Iedere plant groeit anders en stelt andere eisen. Zo leren kinderen
-      spelenderwijs over natuur, voedsel en biodiversiteit.
-      Biologie in de praktijk — en nog leuk ook.
-    </p>
+      <p>
+        De stichting werkt nauw samen met ouders, basisscholen, vrijwilligers en het
+        Milieu Educatief Centrum (MEC) Leiderdorp.
+      </p>
 
-    <h2 style="margin-top:40px;">Samenwerking</h2>
+      <p>
+        Dankzij deze samenwerking kunnen honderden kinderen ieder jaar genieten van een eigen schooltuin.
+      </p>
 
-    <p>
-      De stichting werkt nauw samen met ouders, basisscholen,
-      vrijwilligers en het Milieu Educatief Centrum (MEC) Leiderdorp.
-    </p>
+      <p>
+        Alle basisscholen in Leiderdorp doen mee aan het schooltuinprogramma.
+      </p>
 
-    <p>
-      Dankzij deze samenwerking kunnen honderden kinderen ieder jaar
-      genieten van een eigen schooltuin.
-    </p>
+      <!-- ONDERSTEUNING -->
+      <h2 style="margin-top:40px; color:#1b5e20;">Ondersteuning</h2>
 
-    <h2 style="margin-top:40px;">Ondersteuning</h2>
+      <p>
+        De gemeente Leiderdorp ondersteunt de schooltuinen met een jaarlijkse subsidie
+        voor onderhoud, materialen, zaaigoed en pootgoed.
+      </p>
 
-    <p>
-      De gemeente Leiderdorp ondersteunt de schooltuinen met een jaarlijkse
-      subsidie voor onderhoud, materialen, zaai- en pootgoed.
-    </p>
+      <p>
+        Daarnaast dragen sponsoren bij aan extra voorzieningen en projecten binnen de schooltuinen.
+      </p>
 
-    <p>
-      Daarnaast dragen sponsoren bij aan extra voorzieningen en projecten
-      binnen de schooltuinen.
-    </p>
+      <!-- STICHTINGSGEGEVENS -->
+      <h2 style="margin-top:40px; color:#1b5e20;">Stichtingsgegevens</h2>
+
+      <p>
+        <strong>Stichting Schooltuinen Leiderdorp</strong><br>
+        Dotterbloemkreek 76<br>
+        2353 JD Leiderdorp
+      </p>
+
+      <p>
+        <strong>KvK‑nummer:</strong> 28108915
+      </p>
+
+      <!-- BESTUUR -->
+      <h2 style="margin-top:40px; color:#1b5e20;">Bestuur</h2>
+
+      <p>
+        <strong>Joop van Huut</strong><br>
+        Voorzitter<br>
+        voorzitter@schooltuinleiderdorp.nl
+      </p>
+
+      <p>
+        <strong>Rian Knoester</strong><br>
+        Secretaris<br>
+        secretaris@schooltuinleiderdorp.nl<br>
+        06‑18399981
+      </p>
+
+      <p>
+        <strong>Henny Verstraaten</strong><br>
+        Penningmeester<br>
+        penningmeester@schooltuinleiderdorp.nl
+      </p>
+
+    </div>
 
   </div>
-
-</div>
 
 </MainLayout>
