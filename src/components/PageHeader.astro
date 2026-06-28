@@ -1,57 +1,31 @@
 ---
 import HamburgerMenu from "./HamburgerMenu.astro";
-
 const { title } = Astro.props;
-/* Geen imports meer voor afbeeldingen */
 ---
 
-<div
-  style="
-    background:white;
-    padding:20px;
-    border-radius:20px;
-    margin-bottom:30px;
-    box-shadow:0 2px 12px rgba(0,0,0,0.08);
-  "
->
-  <div
-    style="
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    "
-  >
-    <a
-      href="/schooltuinleiderdorp/"
-      style="
-        text-decoration:none;
-        display:flex;
-        align-items:center;
-        gap:15px;
-        color:inherit;
-      "
-    >
-      <img
+<header style="max-width:900px; margin:0 auto 20px; padding:10px 0;">
+  <div style="
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  ">
+    <!-- LOGO = HOMEKNOP -->
+    <a href="/schooltuinleiderdorp/" style="text-decoration:none;">
+      <img 
         src="/schooltuinleiderdorp/assets/logost.png"
         alt="Schooltuin Leiderdorp"
-        style="height:50px; width:auto;"
+        style="height:60px; width:auto;"
       />
-
-      <span style="font-weight:bold; font-size:1.2rem;">
-        Schooltuin Leiderdorp
-      </span>
     </a>
 
     <HamburgerMenu />
   </div>
 
-  <h1
-    style="
-      margin-top:20px;
-      margin-bottom:0;
-      color:#2e7d32;
-    "
-  >
+  <h1 style="
+    margin:15px 0 0;
+    font-size:1.8rem;
+    color:#1b5e20;
+  ">
     {title}
   </h1>
-</div>
+</header>
