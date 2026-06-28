@@ -2,7 +2,6 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import { news } from "../data/news.js";
 
-// Sorteer nieuws op datum (nieuwste eerst)
 const sortedNews = [...news].sort(
   (a, b) => new Date(b.date) - new Date(a.date)
 );
@@ -11,8 +10,6 @@ const sortedNews = [...news].sort(
 <MainLayout title="Nieuws">
 
   <div style="max-width:900px;margin:auto;padding:20px;">
-
-    <h1 style="color:#1b5e20;margin-bottom:25px;">Nieuws</h1>
 
     {sortedNews.map((item) => (
       <div style="
@@ -26,7 +23,7 @@ const sortedNews = [...news].sort(
         </h2>
 
         <img
-          src={`/assets/${item.photo_news}`}
+          src={`/schooltuinleiderdorp/assets/${item.photo_news}`}
           alt={item.title}
           style="width:100%;border-radius:20px;margin-bottom:20px;"
         />
@@ -36,7 +33,7 @@ const sortedNews = [...news].sort(
         </p>
 
         <a
-          href={`/nieuws/${item.slug}`}
+          href={`/schooltuinleiderdorp/nieuws/${item.slug}`}
           style="color:#1b5e20;font-weight:600;text-decoration:none;"
         >
           Lees verder →
