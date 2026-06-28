@@ -6,66 +6,246 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <div style="max-width:900px; margin:auto; padding:20px;">
 
-    <!-- FOTO OF HEADERAFBEELDING (OPTIONEEL) -->
-    <img
-      src="/schooltuinleiderdorp/assets/nieuws-header.jpg"
-      alt="Nieuws Schooltuin Leiderdorp"
-      style="
-        width:100%;
-        height:300px;
-        object-fit:cover;
-        border-radius:24px;
-        margin-bottom:25px;
-      "
-    />
+    <!-- OPENING SEIZOEN 2026 -->
+    <div style="
+      background:white;
+      padding:30px;
+      border-radius:24px;
+      margin-bottom:25px;
+    ">
+      <h2 style="color:#1b5e20; margin-bottom:15px;">Opening schooltuinseizoen 2026</h2>
 
-    <!-- NIEUWSOVERZICHT -->
-    <div style="background:white; padding:35px; border-radius:24px;">
+      <!-- KLEINE SLIDER OPENING -->
+      <div class="news-slider" data-gallery="opening-2026" style="margin-bottom:15px;">
+        <button class="slider-btn prev" aria-label="Vorige foto">‹</button>
+        <div class="slider-track">
+          <img src="/assets/os261.jpg" alt="Opening schooltuinseizoen 2026" class="slider-image" />
+          <img src="/assets/os262.jpg" alt="Opening schooltuinseizoen 2026" class="slider-image" />
+          <img src="/assets/os263.jpg" alt="Opening schooltuinseizoen 2026" class="slider-image" />
+          <img src="/assets/os264.jpg" alt="Opening schooltuinseizoen 2026" class="slider-image" />
+          <img src="/assets/os265.jpg" alt="Opening schooltuinseizoen 2026" class="slider-image" />
+        </div>
+        <button class="slider-btn next" aria-label="Volgende foto">›</button>
+      </div>
 
-      <h2 style="color:#1b5e20;">Laatste nieuws</h2>
-
-      <p style="color:#555; margin-bottom:25px;">
-        Hier vindt u updates over projecten, activiteiten en gebeurtenissen in en rond de schooltuin.
+      <p>
+        Op woensdag 26 maart is het schooltuinseizoen officieel geopend.
+        De leerlingen trapten het seizoen af met het poten van aardappelen en het zaaien van sterrenkers.
       </p>
+      <p>
+        Tijdens de opening werd stilgestaan bij het belang van natuur- en milieueducatie
+        en het plezier van een eigen tuintje voor iedere leerling.
+      </p>
+    </div>
 
-      <!-- VOORBEELD NIEUWSITEM 1 -->
-      <div style="margin-bottom:35px;">
-        <h3 style="margin-bottom:5px;">Bijenproject van start</h3>
-        <p style="color:#777; font-size:0.9rem; margin-bottom:10px;">29 juni 2026</p>
-        <p>
-          Deze week is het jaarlijkse bijenproject gestart. De imker vertelt de leerlingen alles over
-          het belang van bijen en biodiversiteit. De kinderen mogen zelfs een kijkje nemen in een echte bijenkast.
-        </p>
+    <!-- OPEN AVOND -->
+    <div style="
+      background:white;
+      padding:30px;
+      border-radius:24px;
+      margin-bottom:25px;
+    ">
+      <h2 style="color:#1b5e20; margin-bottom:15px;">Open avond in de schooltuin</h2>
+
+      <!-- KLEINE SLIDER OPEN AVOND -->
+      <div class="news-slider" data-gallery="open-avond" style="margin-bottom:15px;">
+        <button class="slider-btn prev" aria-label="Vorige foto">‹</button>
+        <div class="slider-track">
+          <img src="/assets/oa261.jpg" alt="Open avond in de schooltuin" class="slider-image" />
+          <img src="/assets/oa262.jpg" alt="Open avond in de schooltuin" class="slider-image" />
+          <img src="/assets/oa263.jpg" alt="Open avond in de schooltuin" class="slider-image" />
+          <img src="/assets/oa264.jpg" alt="Open avond in de schooltuin" class="slider-image" />
+          <img src="/assets/oa265.jpg" alt="Open avond in de schooltuin" class="slider-image" />
+          <img src="/assets/oa266.jpg" alt="Open avond in de schooltuin" class="slider-image" />
+        </div>
+        <button class="slider-btn next" aria-label="Volgende foto">›</button>
       </div>
 
-      <!-- VOORBEELD NIEUWSITEM 2 -->
-      <div style="margin-bottom:35px;">
-        <h3 style="margin-bottom:5px;">Aardappeloogst geslaagd</h3>
-        <p style="color:#777; font-size:0.9rem; margin-bottom:10px;">26 juni 2026</p>
-        <p>
-          De aardappeloogst was dit jaar een groot succes. De leerlingen hebben met veel enthousiasme
-          hun eigen aardappelen gerooid en mee naar huis genomen.
-        </p>
+      <p>
+        De open avond werd druk bezocht door ouders, buurtbewoners en oud-leerlingen.
+        Bezoekers konden de tuintjes bekijken, proeven van de oogst en in gesprek gaan met vrijwilligers.
+      </p>
+      <p>
+        De sfeerbeelden laten zien hoe trots de kinderen zijn op hun eigen tuin
+        en hoe levendig de schooltuin is tijdens zo'n avond.
+      </p>
+    </div>
+
+    <!-- RADIO-INTERVIEW -->
+    <div style="
+      background:white;
+      padding:30px;
+      border-radius:24px;
+      margin-bottom:25px;
+    ">
+      <h2 style="color:#1b5e20; margin-bottom:15px;">Radio-interview over de schooltuin</h2>
+
+      <div style="margin-bottom:15px;">
+        <img
+          src="/assets/os26.jpg"
+          alt="Schooltuin Leiderdorp"
+          class="slider-image"
+          data-gallery="radio-interview"
+          style="max-width:100%; border-radius:16px; cursor:pointer;"
+        />
       </div>
 
-      <!-- VOORBEELD NIEUWSITEM 3 -->
-      <div style="margin-bottom:35px;">
-        <h3 style="margin-bottom:5px;">Open avond druk bezocht</h3>
-        <p style="color:#777; font-size:0.9rem; margin-bottom:10px;">3 juni 2026</p>
-        <p>
-          Tijdens de open avond bezochten ouders, buurtbewoners en oud‑leerlingen de schooltuin.
-          Er waren rondleidingen, proeverijen en demonstraties van de kinderen.
-        </p>
-      </div>
+      <p>
+        In een radio-interview vertelde de voorzitter van de stichting over het belang van schooltuinen,
+        biodiversiteit en het enthousiasme van de leerlingen.
+      </p>
+      <p>
+        Het gesprek gaf een mooi beeld van wat de schooltuin betekent voor kinderen, ouders en de omgeving.
+      </p>
+    </div>
 
-      <!-- EINDBERICHT -->
-      <p style="color:#666; font-size:0.95rem;">
+    <!-- GOUDEN WORTEL VERWIJZING -->
+    <div style="
+      background:white;
+      padding:30px;
+      border-radius:24px;
+      margin-bottom:25px;
+    ">
+      <h2 style="color:#1b5e20; margin-bottom:15px;">Gouden Wortel Publieksprijs</h2>
+      <p>
+        In 2025 ontving de schooltuin de Gouden Wortel Publieksprijs.
+        Op de speciale pagina over de Gouden Wortel leest u meer over deze waardering
+        en de betekenis ervan voor de schooltuin.
+      </p>
+      <p>
+        Bezoek de pagina <strong>Gouden Wortel</strong> via het menu voor meer informatie.
+      </p>
+    </div>
+
+    <!-- SLOTTEKST -->
+    <div style="
+      background:#f7faf7;
+      padding:25px;
+      border-radius:24px;
+      border-left:6px solid #1b5e20;
+      margin-bottom:25px;
+    ">
+      <p style="margin:0; color:#444;">
         Heeft u nieuws of foto's voor de website? Mail deze naar
         <strong>info@schooltuinleiderdorp.nl</strong>.
       </p>
-
     </div>
 
   </div>
+
+  <!-- STYLES & SCRIPT VOOR SLIDER + LIGHTBOX -->
+  <style>
+    .news-slider {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .slider-track {
+      display: flex;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      gap: 10px;
+      width: 100%;
+    }
+    .slider-image {
+      flex: 0 0 auto;
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .slider-btn {
+      background:#1b5e20;
+      color:white;
+      border:none;
+      border-radius:50%;
+      width:32px;
+      height:32px;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .slider-btn:hover {
+      opacity:0.85;
+    }
+    .lightbox-overlay {
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,0.8);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      z-index:9999;
+    }
+    .lightbox-image {
+      max-width:90vw;
+      max-height:90vh;
+      border-radius:16px;
+    }
+    .lightbox-close {
+      position:absolute;
+      top:20px;
+      right:20px;
+      background:#ffffff;
+      border:none;
+      border-radius:50%;
+      width:32px;
+      height:32px;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+  </style>
+
+  <script type="module">
+    // Slider buttons
+    document.querySelectorAll(".news-slider").forEach((slider) => {
+      const track = slider.querySelector(".slider-track");
+      const prev = slider.querySelector(".prev");
+      const next = slider.querySelector(".next");
+
+      if (prev && next && track) {
+        prev.addEventListener("click", () => {
+          track.scrollBy({ left: -200, behavior: "smooth" });
+        });
+        next.addEventListener("click", () => {
+          track.scrollBy({ left: 200, behavior: "smooth" });
+        });
+      }
+    });
+
+    // Lightbox
+    function openLightbox(src) {
+      const overlay = document.createElement("div");
+      overlay.className = "lightbox-overlay";
+
+      const img = document.createElement("img");
+      img.className = "lightbox-image";
+      img.src = src;
+
+      const closeBtn = document.createElement("button");
+      closeBtn.className = "lightbox-close";
+      closeBtn.textContent = "×";
+
+      closeBtn.addEventListener("click", () => overlay.remove());
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) overlay.remove();
+      });
+
+      overlay.appendChild(img);
+      overlay.appendChild(closeBtn);
+      document.body.appendChild(overlay);
+    }
+
+    document.querySelectorAll(".slider-image").forEach((img) => {
+      img.addEventListener("click", () => {
+        openLightbox(img.src);
+      });
+    });
+  </script>
 
 </MainLayout>
