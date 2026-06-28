@@ -15,10 +15,13 @@ const item = news.find((n) => n.slug === slug);
 <MainLayout title={item.title}>
 
   <div style="max-width:900px;margin:auto;padding:20px;">
-    <h1 style="color:#1b5e20;margin-bottom:20px;">{item.title}</h1>
+
+    <h1 style="color:#1b5e20;margin-bottom:20px;">
+      {item.title}
+    </h1>
 
     <img
-      src={`/assets/${item.photo_news}`}
+      src={`/schooltuinleiderdorp/assets/${item.photo_news}`}
       alt={item.title}
       style="width:100%;border-radius:20px;margin-bottom:20px;"
     />
@@ -28,10 +31,11 @@ const item = news.find((n) => n.slug === slug);
     </p>
 
     <p style="margin-top:30px;">
-      <a href="/nieuws" style="color:#1b5e20;font-weight:600;text-decoration:none;">
+      <a href="/schooltuinleiderdorp/nieuws" style="color:#1b5e20;font-weight:600;text-decoration:none;">
         ← Terug naar nieuws
       </a>
     </p>
+
   </div>
 
 </MainLayout>
