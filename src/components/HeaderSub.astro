@@ -1,0 +1,14 @@
+---
+import HamburgerMenu from "./HamburgerMenu.astro";
+const base = "/schooltuinleiderdorp";
+---
+
+<header style="max-width:900px; margin:0 auto 20px; padding:10px 0;">
+  <div style="display:flex; justify-content:space-between; align-items:center;">
+    <a href={`${base}/`} style="text-decoration:none;">
+      <img src="/schooltuinleiderdorp/assets/logost.png" alt="Schooltuin Leiderdorp" style="height:60px; width:auto;" />
+    </a>
+
+    <HamburgerMenu />
+  </div>
+</header>
