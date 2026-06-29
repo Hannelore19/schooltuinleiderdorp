@@ -1,34 +1,12 @@
 ---
+import HamburgerMenu from "./HamburgerMenu.astro";
 const base = "/schooltuinleiderdorp";
 ---
 
-<header style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;position:relative;z-index:100;">
+<header style="display:flex;align-items:center;justify-content:space-between;padding:10px 0;position:relative;z-index:200;">
   <a href={`${base}/`} style="display:flex;align-items:center;">
     <img src={`${base}/assets/logost.png`} alt="Schooltuin Leiderdorp" style="height:50px;" />
   </a>
 
-  <button id="menuButton" style="background:#1b5e20;color:white;border:none;padding:10px 14px;border-radius:8px;font-size:18px;cursor:pointer;">
-    ☰
-  </button>
+  <HamburgerMenu />
 </header>
-
-<!-- Menu -->
-<nav id="menu" style="display:none;position:absolute;top:70px;right:0;background:white;border:2px solid #1b5e20;border-radius:12px;padding:20px;z-index:200;">
-  <a href={`${base}/`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Home</a>
-  <a href={`${base}/tuinkalender`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Tuinkalender</a>
-  <a href={`${base}/fotos`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Foto's</a>
-  <a href={`${base}/nieuws`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Nieuws</a>
-  <a href={`${base}/recepten`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Recepten</a>
-  <a href={`${base}/gouden-wortel`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Gouden Wortel</a>
-  <a href={`${base}/over-ons`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Over ons</a>
-  <a href={`${base}/sponsoren`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Sponsoren</a>
-  <a href={`${base}/contact`} style="display:block;margin-bottom:10px;color:#1b5e20;text-decoration:none;">Contact</a>
-</nav>
-
-<script>
-  const btn = document.getElementById("menuButton");
-  const menu = document.getElementById("menu");
-  btn.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "none" ? "block" : "none";
-  });
-</script>
