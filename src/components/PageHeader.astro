@@ -1,31 +1,8 @@
 ---
-import HamburgerMenu from "./HamburgerMenu.astro";
+const base = "/schooltuinleiderdorp";
 const { title } = Astro.props;
 ---
 
-<header style="max-width:900px; margin:0 auto 20px; padding:10px 0;">
-  <div style="
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  ">
-    <!-- LOGO = HOMEKNOP -->
-    <a href="/schooltuinleiderdorp/" style="text-decoration:none;">
-      <img 
-        src="/schooltuinleiderdorp/assets/logost.png"
-        alt="Schooltuin Leiderdorp"
-        style="height:60px; width:auto;"
-      />
-    </a>
-
-    <HamburgerMenu />
-  </div>
-
-  <h1 style="
-    margin:15px 0 0;
-    font-size:1.8rem;
-    color:#1b5e20;
-  ">
-    {title}
-  </h1>
-</header>
+<div style="margin-bottom:20px;">
+  <h1 style="color:#1b5e20;margin:0;font-size:28px;">{title}</h1>
+</div>
