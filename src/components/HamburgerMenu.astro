@@ -2,58 +2,80 @@
 const base = "/schooltuinleiderdorp";
 ---
 
-<div style="position:relative; z-index:999999;">
-  <!-- BUTTON -->
-  <button
-    id="menuButton"
-    style="
-      background:#1b5e20;
-      color:white;
-      padding:12px 16px;
-      border:none;
-      border-radius:12px;
-      font-size:1.4rem;
-      font-weight:bold;
-      cursor:pointer;
-    "
-  >
-    ☰
-  </button>
+<style>
+  /* Container */
+  .menu-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
 
-  <!-- MENU -->
-  <nav
-    id="menuPanel"
-    style="
-      display:none;
-      position:absolute;
-      top:55px;
-      right:0;
-      width:220px;
-      background:white;
-      border:3px solid #1b5e20;
-      border-radius:16px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.20);
-      overflow:hidden;
-      z-index:999999;
-    "
-  >
-    <a href={`${base}/`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Home</a>
-    <a href={`${base}/kalender`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Tuinkalender</a>
-    <a href={`${base}/fotos`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Foto's</a>
-    <a href={`${base}/nieuws`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Nieuws</a>
-    <a href={`${base}/recepten`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Recepten</a>
-    <a href={`${base}/gouden-wortel`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Gouden Wortel</a>
-    <a href={`${base}/over-ons`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Over ons</a>
-    <a href={`${base}/sponsoren`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; background:#f4f8f4; margin-bottom:2px; text-decoration:none; color:#333;">Sponsoren</a>
-    <a href={`${base}/contact`} style="display:block; padding:14px 16px; border-left:6px solid #1b5e20; text-decoration:none; color:#333;">Contact</a>
+  /* Verborgen checkbox */
+  #menuToggle {
+    display: none;
+  }
+
+  /* Knop */
+  .menu-button {
+    background: #1b5e20;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  /* Paneel */
+  .menu-panel {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 220px;
+    background: white;
+    border: 3px solid #1b5e20;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+    overflow: hidden;
+    display: none;
+  }
+
+  /* Toon paneel wanneer checkbox aan staat */
+  #menuToggle:checked + .menu-button + .menu-panel {
+    display: block;
+  }
+
+  /* Links */
+  .menu-link {
+    display: block;
+    padding: 14px 16px;
+    border-left: 6px solid #1b5e20;
+    background: #f4f8f4;
+    margin-bottom: 2px;
+    text-decoration: none;
+    color: #333;
+  }
+</style>
+
+<div class="menu-container">
+  <!-- Toggle -->
+  <input type="checkbox" id="menuToggle" />
+
+  <!-- Button -->
+  <label for="menuToggle" class="menu-button">☰</label>
+
+  <!-- Menu -->
+  <nav class="menu-panel">
+    <a class="menu-link" href={`${base}/`}>Home</a>
+    <a class="menu-link" href={`${base}/kalender`}>Tuinkalender</a>
+    <a class="menu-link" href={`${base}/fotos`}>Foto's</a>
+    <a class="menu-link" href={`${base}/nieuws`}>Nieuws</a>
+    <a class="menu-link" href={`${base}/recepten`}>Recepten</a>
+    <a class="menu-link" href={`${base}/gouden-wortel`}>Gouden Wortel</a>
+    <a class="menu-link" href={`${base}/over-ons`}>Over ons</a>
+    <a class="menu-link" href={`${base}/sponsoren`}>Sponsoren</a>
+    <a class="menu-link" href={`${base}/contact`}>Contact</a>
   </nav>
 </div>
-
-<script>
-  const btn = document.getElementById("menuButton");
-  const panel = document.getElementById("menuPanel");
-
-  btn.addEventListener("click", () => {
-    panel.style.display = panel.style.display === "none" ? "block" : "none";
-  });
-</script>
