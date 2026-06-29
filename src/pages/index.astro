@@ -3,6 +3,13 @@ import MainLayout from "../layouts/MainLayout.astro";
 import InfoCards from "../components/InfoCards.astro";
 import DezeWeek from "../components/DezeWeek.astro";
 import HomepageNieuws from "../components/HomepageNieuws.astro";
+import Slider from "../components/Slider.astro";
+
+const sfeerFotos = [
+  "/schooltuinleiderdorp/assets/foto1.jpg",
+  "/schooltuinleiderdorp/assets/foto2.jpg",
+  "/schooltuinleiderdorp/assets/foto3.jpg"
+];
 ---
 
 <MainLayout>
@@ -17,66 +24,10 @@ import HomepageNieuws from "../components/HomepageNieuws.astro";
     <DezeWeek />
   </section>
 
-  <!-- FOTO SLIDER -->
+  <!-- SFEER SLIDER -->
   <section style="max-width:1000px;margin:20px auto 40px;">
     <h2 style="margin-bottom:15px;">Foto’s uit de tuin</h2>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-
-    <div id="image-slider" class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="/schooltuinleiderdorp/assets/foto1.jpg" />
-          </li>
-          <li class="splide__slide">
-            <img src="/schooltuinleiderdorp/assets/foto2.jpg" />
-          </li>
-          <li class="splide__slide">
-            <img src="/schooltuinleiderdorp/assets/foto3.jpg" />
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <style>
-      .splide__slide img {
-        height: 350px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 16px;
-      }
-
-      .splide__arrow {
-        background: rgba(0, 0, 0, 0.4);
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-
-      .splide__arrow svg {
-        fill: white;
-      }
-
-      .splide {
-        margin-bottom: 10px;
-      }
-    </style>
-
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script>
-      new Splide('#image-slider', {
-        type: 'loop',
-        perPage: 1,
-        autoplay: true,
-        interval: 3000,
-        pauseOnHover: true,
-        arrows: true,
-        pagination: false
-      }).mount();
-    </script>
+    <Slider photos={sfeerFotos} height="350px" />
   </section>
 
   <!-- LAATSTE NIEUWS -->
