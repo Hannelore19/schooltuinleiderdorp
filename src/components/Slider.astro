@@ -1,10 +1,13 @@
 ---
 const { photos, height = "260px" } = Astro.props;
+
+// Unieke ID voor elke slider
+const sliderId = `splide-${Math.random().toString(36).substring(2, 9)}`;
 ---
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css" />
 
-<div class="splide">
+<div id={sliderId} class="splide">
   <div class="splide__track">
     <ul class="splide__list">
       {photos.map((photo) => (
@@ -20,9 +23,10 @@ const { photos, height = "260px" } = Astro.props;
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    new Splide(".splide", {
+    new Splide(`#${"{sliderId}"}`, {
       type: "loop",
       perPage: 1,
       autoplay: true,
