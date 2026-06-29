@@ -1,39 +1,76 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+const base = "/schooltuinleiderdorp";
 ---
 
 <MainLayout title="Gouden Wortel Publieksprijs 2025">
+
   <div style="max-width:900px; margin:auto; padding:20px;">
 
-    <div style="background:white; padding:30px; border-radius:24px; margin-bottom:25px;">
-      <h2 style="color:#1b5e20; margin-bottom:20px;">Gouden Wortel Publieksprijs 2025</h2>
+    <!-- INTRO + FOTO 1 -->
+    <div style="background:white; padding:30px; border-radius:24px; margin-bottom:30px; line-height:1.7;">
+      <h2 style="color:#1b5e20; margin-top:0; margin-bottom:20px;">
+        Leiderdorp wint Publieksprijs ‘Gouden Wortel’ 2025
+      </h2>
 
       <img 
         src="/schooltuinleiderdorp/assets/publieksprijsgw.jpg" 
-        alt="Uitreiking Gouden Wortel Publieksprijs" 
-        style="width:100%; border-radius:16px; margin-bottom:20px;" 
+        alt="Uitreiking Gouden Wortel Publieksprijs"
+        style="width:100%; border-radius:16px; margin-bottom:20px;"
       />
 
       <p>
-        In 2025 ontving de Schooltuinen Leiderdorp de 
-        <strong>Gouden Wortel Publieksprijs</strong>.
+        Leiderdorp kreeg de meeste stemmen van het publiek in de landelijke stemming voor de 
+        <strong>Gouden Wortel 2025</strong>. Met maar liefst <strong>61% van alle stemmen</strong> 
+        eindigde Leiderdorp overtuigend op de eerste plaats.
       </p>
 
       <p>
-        Leiderdorp kreeg maar liefst <strong>61% van alle stemmen</strong>.
+        Op vrijdagmiddag 23 mei ontvingen wethouders <strong>Gebke van Gaal</strong> en 
+        <strong>Herman Romeijn</strong> een oorkonde en een grote worteltaart als erkenning voor 
+        deze bijzondere prestatie.
       </p>
 
       <p>
-        De prijs werd uitgereikt aan wethouders 
-        <strong>Gebke van Gaal</strong> en <strong>Herman Romeijn</strong>.
+        De Gouden Wortel is een initiatief van de 
+        <a href="https://alliantieschooltuinen.nl/" target="_blank" style="color:#1b5e20; font-weight:bold;">
+          Alliantie Schooltuinen
+        </a>
+        en het programma Jong Leren Eten.
       </p>
 
       <p>
-        De schooltuinen worden mogelijk gemaakt door een grote groep vrijwilligers.
+        In Leiderdorp worden de schooltuinen mogelijk gemaakt door een grote groep vrijwilligers 
+        onder leiding van schooltuinleider <strong>Joop van Huut</strong>. De gemeente zorgt voor 
+        de grond en geeft jaarlijks subsidie voor onderhoud, zaaigoed, pootgoed en andere materialen.
       </p>
+
+      <img 
+        src="/schooltuinleiderdorp/assets/goudenwortel.jpg" 
+        alt="Gouden Wortel Leiderdorp"
+        style="width:100%; border-radius:16px; margin-top:20px;"
+      />
     </div>
 
-    <div style="background:#f7faf7; padding:25px; border-radius:24px; border-left:6px solid #1b5e20;">
+    <!-- FILMPJE -->
+    <div style="background:white; padding:30px; border-radius:24px; margin-bottom:30px; line-height:1.7;">
+      <h3 style="color:#1b5e20; margin-top:0;">Bekijk het filmpje</h3>
+
+      <p>
+        Voor deze wedstrijd maakten de vrijwilligers een mooi filmpje over de Leiderdorpse schooltuinen.
+      </p>
+
+      <a 
+        href="https://www.schooltuinleiderdorp.nl/my-content/uploads/2025/05/WhatsApp-Video-2025-05-11-at-20.35.28.mp4"
+        target="_blank"
+        style="display:inline-block; background:#1b5e20; color:white; padding:12px 20px; border-radius:12px; text-decoration:none; margin-top:10px;"
+      >
+        ▶ Bekijk het filmpje
+      </a>
+    </div>
+
+    <!-- CONTACT -->
+    <div style="background:#f7faf7; padding:25px; border-radius:24px; border-left:6px solid #1b5e20; line-height:1.7;">
       <p style="margin:0;">
         Heeft u nieuws of foto's voor de website?  
         Mail naar <strong>info@schooltuinleiderdorp.nl</strong>.
@@ -41,4 +78,5 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
   </div>
+
 </MainLayout>
