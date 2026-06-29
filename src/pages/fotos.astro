@@ -1,5 +1,5 @@
 ---
-import Slider from "../components/Slider.astro";
+import MainLayout from "../layouts/MainLayout.astro";
 
 // ACTIVITEITEN
 const activiteiten = [
@@ -33,23 +33,56 @@ const oogst = [
 ];
 ---
 
-<div style="max-width:900px;margin:auto;padding:20px;">
+<MainLayout title="Foto’s">
 
-  <h1 style="color:#1b5e20;margin-bottom:20px;">Foto's uit de schooltuin</h1>
-  <p style="color:#666;margin-bottom:30px;">
-    Een vrolijk overzicht van wat we doen in de schooltuin.
-  </p>
+  <div style="max-width:900px; margin:0 auto; padding:20px;">
 
-  <!-- ACTIVITEITEN -->
-  <h2 style="color:#1b5e20;margin:20px 0 10px 0;">Activiteiten</h2>
-  <Slider photos={activiteiten} height="300px" />
+    <p style="font-size:1.1rem; line-height:1.6; color:#555; margin-bottom:30px;">
+      Een vrolijk overzicht van wat we doen in de schooltuin.
+    </p>
 
-  <!-- NATUUR & DIEREN -->
-  <h2 style="color:#1b5e20;margin:40px 0 10px 0;">Natuur & dieren</h2>
-  <Slider photos={natuur} height="300px" />
+    <!-- ACTIVITEITEN -->
+    <h2 style="color:#1b5e20; margin:20px 0 15px;">Activiteiten</h2>
+    <div style="display:grid; grid-template-columns:1fr; gap:25px;">
+      {activiteiten.map((foto) => (
+        <div style="background:white; padding:20px; border-radius:20px;">
+          <img 
+            src={foto}
+            alt="Activiteit in de schooltuin"
+            style="width:100%; border-radius:16px;"
+          />
+        </div>
+      ))}
+    </div>
 
-  <!-- OOGST & TUINWERK -->
-  <h2 style="color:#1b5e20;margin:40px 0 10px 0;">Oogst & tuinwerk</h2>
-  <Slider photos={oogst} height="300px" />
+    <!-- NATUUR & DIEREN -->
+    <h2 style="color:#1b5e20; margin:40px 0 15px;">Natuur & dieren</h2>
+    <div style="display:grid; grid-template-columns:1fr; gap:25px;">
+      {natuur.map((foto) => (
+        <div style="background:white; padding:20px; border-radius:20px;">
+          <img 
+            src={foto}
+            alt="Natuur en dieren in de schooltuin"
+            style="width:100%; border-radius:16px;"
+          />
+        </div>
+      ))}
+    </div>
 
-</div>
+    <!-- OOGST & TUINWERK -->
+    <h2 style="color:#1b5e20; margin:40px 0 15px;">Oogst & tuinwerk</h2>
+    <div style="display:grid; grid-template-columns:1fr; gap:25px;">
+      {oogst.map((foto) => (
+        <div style="background:white; padding:20px; border-radius:20px;">
+          <img 
+            src={foto}
+            alt="Oogst en tuinwerk in de schooltuin"
+            style="width:100%; border-radius:16px;"
+          />
+        </div>
+      ))}
+    </div>
+
+  </div>
+
+</MainLayout>
