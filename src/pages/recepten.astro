@@ -5,12 +5,61 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout title="Recepten uit de schooltuin">
   <div style="max-width:900px;margin:auto;padding:20px;">
 
-    <div style="background:white;padding:30px;border-radius:24px;">
+    <div style="background:white;padding:30px;border-radius:24px;margin-bottom:30px;">
       <h2 style="color:#1b5e20;margin-top:0;">Recepten uit de schooltuin</h2>
-
-      <p style="color:#555;">
-        Binnenkort verschijnen hier heerlijke recepten met groenten uit de schooltuin.
+      <p style="color:#555;line-height:1.6;">
+        Hier vind je heerlijke ideeën om te koken met groenten uit de schooltuin.
+        Klik op een recept om meer te lezen.
       </p>
+    </div>
+
+    <!-- Recepten overzicht -->
+    <div style="display:flex;flex-direction:column;gap:20px;">
+
+      <!-- Recept 1 -->
+      <a href="/schooltuinleiderdorp/recepten/courgettesoep"
+         style="text-decoration:none;color:inherit;">
+        <div style="background:white;padding:24px;border-radius:20px;border-left:6px solid #1b5e20;">
+          <h3 style="margin:0;color:#1b5e20;">Courgettesoep</h3>
+          <p style="margin:8px 0 0 0;color:#555;">
+            Een romige soep met verse courgettes uit de tuin.
+          </p>
+        </div>
+      </a>
+
+      <!-- Recept 2 -->
+      <a href="/schooltuinleiderdorp/recepten/pompoenstoof"
+         style="text-decoration:none;color:inherit;">
+        <div style="background:white;padding:24px;border-radius:20px;border-left:6px solid #1b5e20;">
+          <h3 style="margin:0;color:#1b5e20;">Pompoenstoof</h3>
+          <p style="margin:8px 0 0 0;color:#555;">
+            Een warme stoofschotel met pompoen en kruiden.
+          </p>
+        </div>
+      </a>
+
+      <!-- Recept 3 -->
+      <a href="/schooltuinleiderdorp/recepten/kruidenpesto"
+         style="text-decoration:none;color:inherit;">
+        <div style="background:white;padding:24px;border-radius:20px;border-left:6px solid #1b5e20;">
+          <h3 style="margin:0;color:#1b5e20;">Kruidenpesto</h3>
+          <p style="margin:8px 0 0 0;color:#555;">
+            Een frisse pesto met basilicum, peterselie en munt.
+          </p>
+        </div>
+      </a>
+
+      <!-- Recept 4 -->
+      <a href="/schooltuinleiderdorp/recepten/uiquiche"
+         style="text-decoration:none;color:inherit;">
+        <div style="background:white;padding:24px;border-radius:20px;border-left:6px solid #1b5e20;">
+          <h3 style="margin:0;color:#1b5e20;">Ui-quiche</h3>
+          <p style="margin:8px 0 0 0;color:#555;">
+            Een hartige quiche met uien uit de schooltuin.
+          </p>
+        </div>
+      </a>
+
     </div>
 
   </div>
