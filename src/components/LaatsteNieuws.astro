@@ -1,24 +1,33 @@
 ---
-import { news } from "../data/news.js";
-
-// volgorde volgens jouw wens:
-// nieuwste = bijenproject, daarna aardappeloogst, daarna open-avond
-const ordered = [
-  news.find(n => n.slug === "bijenproject"),
-  news.find(n => n.slug === "aardappeloogst"),
-  news.find(n => n.slug === "open-avond")
+/* Volledig statisch component — geen imports, geen slugs */
+const nieuws = [
+  {
+    title: "Bijenproject gestart",
+    intro: "Het bijenproject is gestart! De leerlingen leren alles over bestuiving en bijen.",
+    photo: "/schooltuinleiderdorp/assets/zonnebloembij.png"
+  },
+  {
+    title: "Aardappeloogst",
+    intro: "De aardappeloogst leverde dit jaar een paar verrassend grote exemplaren op.",
+    photo: "/schooltuinleiderdorp/assets/foto3.jpg"
+  },
+  {
+    title: "Open avond",
+    intro: "Altijd hadden we mooi weer op de Open Avond van de schooltuinen in Leiderdorp. Maar dit keer liet het weer ons in de steek.",
+    photo: "/schooltuinleiderdorp/assets/oa261.jpg"
+  }
 ];
 ---
 
 <div style="background:white; padding:30px; border-radius:24px; margin-bottom:40px;">
   <h2 style="color:#1b5e20; margin-top:0; margin-bottom:20px;">Laatste nieuws</h2>
 
-  {ordered.map(item => (
+  {nieuws.map(item => (
     <div style="display:flex; gap:15px; align-items:flex-start; margin-bottom:25px;">
 
       <!-- kleine foto -->
       <img 
-        src={item.photos[0]} 
+        src={item.photo} 
         alt={item.title} 
         style="width:110px; height:110px; object-fit:cover; border-radius:12px;"
       />
