@@ -1,14 +1,18 @@
 ---
-import HamburgerMenu from "./HamburgerMenu.astro";
 const base = "/schooltuinleiderdorp";
+import HamburgerMenu from "./HamburgerMenu.astro";
 ---
 
-<header style="max-width:900px; margin:0 auto 20px; padding:10px 0;">
-  <div style="display:flex; justify-content:space-between; align-items:center;">
-    <a href={`${base}/`} style="text-decoration:none;">
-      <img src="/schooltuinleiderdorp/assets/logost.png" alt="Schooltuin Leiderdorp" style="height:60px; width:auto;" />
-    </a>
+<header style="max-width:900px; margin:0 auto 20px; padding:10px 0; position:relative;">
 
-    <HamburgerMenu />
-  </div>
+  <!-- LOGO -->
+  <a href={`${base}/`} style="text-decoration:none;">
+    <img src="/schooltuinleiderdorp/assets/logost.png"
+         alt="Schooltuin Leiderdorp"
+         style="height:60px; width:auto;" />
+  </a>
+
+  <!-- MENU (zweeft rechtsboven dankzij fixed in component) -->
+  <HamburgerMenu />
+
 </header>
