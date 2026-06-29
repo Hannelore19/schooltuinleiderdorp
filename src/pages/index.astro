@@ -3,32 +3,24 @@ import MainLayout from "../layouts/MainLayout.astro";
 import FotoGalerij from "../components/FotoGalerij.astro";
 import DezeWeek from "../components/DezeWeek.astro";
 import InfoCards from "../components/InfoCards.astro";
+import LaatsteNieuws from "../components/LaatsteNieuws.astro";
 ---
 
 <MainLayout title="Schooltuin Leiderdorp">
 
   <div style="max-width:900px; margin:0 auto; padding:20px;">
 
-    <!-- WELKOM -->
-    <div style="background:white; padding:30px; border-radius:24px; margin-bottom:40px;">
-      <h1 style="color:#1b5e20; margin-top:0; margin-bottom:15px;">
-        Welkom bij de Schooltuin Leiderdorp
-      </h1>
-
-      <p style="color:#555; line-height:1.7;">
-        De Schooltuin Leiderdorp is een plek waar kinderen leren, ontdekken en genieten van de natuur.
-        Op deze website vind je informatie over de tuin, foto's, recepten, nieuws en meer.
-      </p>
-    </div>
+    <!-- INFO CARDS (bovenaan) -->
+    <InfoCards />
 
     <!-- DEZE WEEK -->
     <DezeWeek />
 
-    <!-- INFO CARDS -->
-    <InfoCards />
-
     <!-- FOTO GALERIJ -->
     <FotoGalerij />
+
+    <!-- LAATSTE NIEUWS -->
+    <LaatsteNieuws />
 
   </div>
 
