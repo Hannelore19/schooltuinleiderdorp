@@ -9,6 +9,7 @@ const path = Astro.url.pathname;
 
 const isHome =
   path === "/" ||
+  path === "/index.html" ||                // ⭐ DEZE ontbrak
   path === "/schooltuinleiderdorp/" ||
   path === "/schooltuinleiderdorp/index.html";
 
