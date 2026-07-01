@@ -10,27 +10,24 @@ import MainLayout from "../layouts/MainLayout.astro";
       Alle activiteiten van het schooltuinseizoen overzichtelijk bij elkaar.
     </p>
 
-    <!-- BELANGRIJKE MOMENTEN (compacte kaart) -->
+    <!-- BELANGRIJKE MOMENTEN (compact, zonder bullets) -->
     <div style="background:white; padding:30px; border-radius:24px; margin-bottom:30px;">
       <h2 style="border-bottom:2px solid #1b5e20; padding-bottom:10px; margin-top:0; margin-bottom:20px;">
         Belangrijke momenten
       </h2>
 
-      <ul style="margin:0; padding-left:20px; line-height:1.7;">
-        <li>📅 Open avond — 3 juni, 19:00–20:30</li>
-        <li>🥔 Aardappeloogst — 22 t/m 26 juni</li>
-        <li>🐝 Bijenproject — 29 juni t/m 10 juli</li>
-        <li>🍲 Soepproject — september</li>
-      </ul>
+      <p style="margin:0 0 10px 0; line-height:1.7;">📅 Open avond — 3 juni, 19:00–20:30</p>
+      <p style="margin:0 0 10px 0; line-height:1.7;">🥔 Aardappeloogst — 22 t/m 26 juni</p>
+      <p style="margin:0 0 10px 0; line-height:1.7;">🐝 Bijenproject — 29 juni t/m 10 juli</p>
+      <p style="margin:0; line-height:1.7;">🍲 Soepproject — september</p>
     </div>
 
-    <!-- VOORJAAR + ZOMER SAMEN (maart t/m juli) -->
+    <!-- VOORJAAR (maart t/m juli) -->
     <div style="background:white; padding:30px; border-radius:24px; margin-bottom:30px;">
       <h2 style="border-bottom:2px solid #1b5e20; padding-bottom:10px; margin-top:0; margin-bottom:25px;">
-        Voorjaar (maart t/m juli)
+        Voorjaar
       </h2>
 
-      <!-- GRID VAN MAANDEN -->
       <div style="
         display:grid;
         grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -41,7 +38,6 @@ import MainLayout from "../layouts/MainLayout.astro";
         <div>
           <h3 style="margin:0 0 10px 0;">Maart</h3>
           <ul style="margin:0; padding-left:20px; line-height:1.7;">
-            <li>Start Leeuwerikschool (27 maart)</li>
             <li>Paden trappen</li>
             <li>Mest strooien</li>
             <li>Aardappelen poten</li>
@@ -73,19 +69,24 @@ import MainLayout from "../layouts/MainLayout.astro";
           </ul>
         </div>
 
-        <!-- JUNI/JULI (oude Zomer) -->
+        <!-- JUNI/JULI -->
         <div>
           <h3 style="margin:0 0 10px 0;">Juni / Juli</h3>
           <ul style="margin:0; padding-left:20px; line-height:1.7;">
-            <li>3 juni: Open avond</li>
             <li>Sla en andijvie oogsten</li>
-            <li>22–26 juni: aardappelen rooien</li>
+            <li>Aardappelen rooien</li>
             <li>Bijenproject met imker</li>
             <li>Vakantieklaar maken van de tuin</li>
           </ul>
         </div>
 
       </div>
+
+      <!-- WOENSDAGMIDDAG OPEN TIJDENS SEIZOEN -->
+      <p style="margin-top:25px; font-size:0.95rem; color:#444; line-height:1.6;">
+        🌿 Tijdens het seizoen is de tuin iedere <strong>woensdagmiddag</strong> open voor kinderen.
+        Vrijwilligers zijn aanwezig om te helpen en vragen te beantwoorden.
+      </p>
     </div>
 
     <!-- ZOMERVAKANTIE -->
